@@ -1,0 +1,404 @@
+
+/*Tất cả sản phẩm */
+.container-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .sidebar {
+    width: 20%;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 4px solid #00000069;
+    /* Viền mỏng màu xám nhạt */
+    border-radius: 8px;
+    /* Bo góc 8px cho mềm mại */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Hiệu ứng bóng nhẹ */
+    transition: box-shadow 0.3s ease;
+    /* Hiệu ứng chuyển mượt khi hover */
+  }
+
+  .sidebar:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* Tăng bóng khi hover */
+  }
+
+  .sidebar h3 {
+    margin-top: 0;
+    font-size: 30px;
+    font-family: "Brush Script MT", cursive; /* Chọn font chữ mềm mại */
+    font-style: italic; /* Chữ nghiêng */
+    color: #4b3621; /* Màu nâu giống hình */
+  }
+
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+
+  .sidebar ul li {
+    margin-bottom: 10px;
+    font-size:15px;
+    font-family: "Brush Script MT", cursive; /* Chọn font chữ mềm mại */
+    font-style: italic; /* Chữ nghiêng */
+    color: #4b3621; /* Màu nâu giống hình */
+  }
+
+  .sidebar ul li input {
+    margin-right: 10px;
+  }
+
+  .main-content {
+    width: 80%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .product {
+    background-color: #fff;
+    border: 3px solid #fd7200;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(139, 125, 125, 0.1);
+    position: relative;
+  }
+
+  .product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+  .product .discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #df3b3b;
+    color: #fff;
+    padding: 5px 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 14px;
+  }
+
+  .product .name {
+    color: rgb(15, 14, 14);
+    font-weight: bold;
+    margin: 10px 0 5px;
+  }
+
+  .product .oldnew {
+    display: flex;
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    gap: 10px;
+    /* Khoảng cách giữa giá cũ và giá mới */
+    margin-bottom: 15px;
+  }
+  .flex button {
+    transition: transform 0.4s ease-in-out; /* Hiệu ứng mượt */
+  }
+
+  .flex button:hover {
+    transform: translateY(-8px); /* Di chuyển icon lên trên */
+  }
+  .product .old-price {
+    text-decoration: line-through;
+    color: #999;
+  }
+
+  .product .new-price {
+    color: rgb(228, 145, 22);
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .pagination-links {
+    text-align: center;
+    margin: 20px 0;
+
+  }
+
+  .pagination-links a {
+    margin: 0 5px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    color: #000;
+    border-radius: 5px;
+    /* Bo góc */
+  }
+
+  .pagination-links a.active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(233, 193, 15);
+
+  }
+/* Footer chính */
+.footer {
+    background-color: #4d4a2b; /* Màu nâu lá bạn có thể tùy chỉnh */
+    color: #fff;
+    padding: 2rem 0; /* Khoảng cách trên dưới */
+    }
+    
+    /* Khung chứa của footer */
+    .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;       /* Nếu màn hình nhỏ, các cột sẽ xuống hàng */
+    justify-content: space-between;
+    gap: 2rem;             /* Khoảng cách giữa các cột */
+    padding: 0 1rem;       /* Canh lề trái phải */
+    }
+    
+    /* Mỗi cột footer */
+    .footer-col {
+    flex: 1 1 250px;  /* Mỗi cột rộng ít nhất 250px, co giãn nếu còn chỗ */
+    min-width: 250px;
+    }
+    
+    /* Tiêu đề cột */
+    .footer-heading {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    }
+    
+    /* Tiêu đề cột 1 (tên thương hiệu) */
+    .footer-title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #ffd700; /* Vàng */
+    }
+    
+    /* Thông tin địa chỉ, liên hệ */
+    .footer-address,
+    .footer-contact {
+    margin-bottom: 0.5rem;
+    }
+    
+    /* Danh sách link */
+    .footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    .footer-links li {
+    margin-bottom: 0.5rem;
+    }
+    .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    }
+    .footer-links a:hover {
+    text-decoration: underline;
+    }
+    
+    /* Mạng xã hội */
+    .social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    text-decoration: none;
+    }
+    .social-icons a:hover {
+    color: #ffeb3b; /* Vàng nhạt khi hover */
+    }
+    
+    
+    /* Fanpage iframe (tuỳ chỉnh) */
+    .fanpage iframe {
+    border: none;
+    width: 100%;
+    max-width: 300px;
+    height: 130px;
+    }
+    
+    /* liên hệ */
+    .contact-section {
+    padding: 50px 0;
+    border-top: 50px solid transparent;
+    }
+    .contact-info {
+    font-size: 16px;
+    }
+    .contact-info strong {
+    color: #333;
+    }
+    .contact-info a {
+    color: #28a745;
+    text-decoration: none;
+    }
+    .contact-info a:hover {
+    text-decoration: underline;
+    }
+    .contact-form button {
+    background-color: #056608;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    }
+    .contact-form button:hover {
+    background-color: #034c05;
+    }
+
+  /* Footer chính */
+.footer {
+  background-color: #4d4a2b; /* Màu nâu lá bạn có thể tùy chỉnh */
+  color: #fff;
+  padding: 2rem 0; /* Khoảng cách trên dưới */
+  }
+  
+  /* Khung chứa của footer */
+  .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;       /* Nếu màn hình nhỏ, các cột sẽ xuống hàng */
+  justify-content: space-between;
+  gap: 2rem;             /* Khoảng cách giữa các cột */
+  padding: 0 1rem;       /* Canh lề trái phải */
+  }
+  
+  /* Mỗi cột footer */
+  .footer-col {
+  flex: 1 1 250px;  /* Mỗi cột rộng ít nhất 250px, co giãn nếu còn chỗ */
+  min-width: 250px;
+  }
+  
+  /* Tiêu đề cột */
+  .footer-heading {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  }
+  
+  /* Tiêu đề cột 1 (tên thương hiệu) */
+  .footer-title {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #ffd700; /* Vàng */
+  }
+  
+  /* Thông tin địa chỉ, liên hệ */
+  .footer-address,
+  .footer-contact {
+  margin-bottom: 0.5rem;
+  }
+  
+  /* Danh sách link */
+  .footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  .footer-links li {
+  margin-bottom: 0.5rem;
+  }
+  .footer-links a {
+  color: #fff;
+  text-decoration: none;
+  }
+  .footer-links a:hover {
+  text-decoration: underline;
+  }
+  
+  /* Mạng xã hội */
+  .social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  text-decoration: none;
+  }
+  .social-icons a:hover {
+  color: #ffeb3b; /* Vàng nhạt khi hover */
+  }
+  
+
+  /* Fanpage iframe (tuỳ chỉnh) */
+  .fanpage iframe {
+  border: none;
+  width: 100%;
+  max-width: 300px;
+  height: 130px;
+  }
+
+  .wishlist-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1000;
+    font-size: 14px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.wishlist-notification a {
+    color: yellow;
+    text-decoration: underline;
+}
+
+@media (max-width: 991px) and (max-width: 767px) {
+  header.header .logo img {
+      max-height: 70px !important;
+      display: block;
+      margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .container-flex {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .sidebar {
+      width: 70%;
+  }
+  .sidebar ul li {
+    margin-bottom: 10px;
+    margin-left: 50px;
+  }
+  .main-content {
+      width: 100%;
+  }
+
+  .products {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 cột */
+      gap: 10px;
+  }
+
+  .product {
+      width: 100%; /* Đảm bảo sản phẩm co giãn theo grid */
+  }
+}
