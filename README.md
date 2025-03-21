@@ -7,5 +7,5 @@ Link web:       http://doantotnghiep.wuaze.com/index.php
 
 ![image](https://github.com/user-attachments/assets/01223436-96e3-4a7a-98ea-6db6c1e7df29)
 
-Sử dụng thuật toán Recommendation System để gọi ý sản phẩm
+Sử dụng thuật toán Recommendation System để gợi ý sản phẩm
 ![image](https://github.com/user-attachments/assets/cfb35bb5-6474-4ca2-882b-63acb2eb8391)
